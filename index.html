@@ -11,15 +11,16 @@
 <body>
     <p id="sayHello">good morning starshine! your pet says hello!</p>
     <img src="https://media.istockphoto.com/id/1151842909/vector/cute-cartoon-spider.jpg?s=170667a&w=0&k=20&c=lvuffrHl9cTTb43HcfXLtQdryCO_WHHfJ6PExio87r8=" alt="" srcset="">
-
-    <button class="lights" type="button">lights / lights off</button>
-<button class="eat" type="button">feed me!</button>
-<button class="play" type="button">play with me!</button>
+<div id="buttons">
+    <button id="lights" type="button"onclick="lightsBtn()">lights / lights off</button>
+<button id="eat" type="button" onclick="eatBtn()">feed me!</button>
+<button id="play" type="button" onclick="playBtn()">play with me!</button>
 
 <ul>
-<li>hunger</li>
-<li>sleepiness</li>
-<li>boredom</li>
+<li id="hunger">hunger</li>
+<li id="sleep">sleepiness</li>
+<li id="bored">boredom</li>
 </ul>
+<div>
 </body>
 </html>
