@@ -1,5 +1,10 @@
 console.log("project 0")
 // 3 variables for the levels and assign initial value
+let dead = 10;
+const deathTime = document.getElementById("deathToll");
+deathTime.style.display = "none"
+
+
 
 let hungervar = 1;
 console.log(hungervar)
@@ -29,29 +34,16 @@ function eatBtn() {
 }
 
 function lightsBtn(){
-console.log("wack")
-document.getElementById("lights");
-const sleepvar = document.getElementById("sleep");
-console.log(sleepvar)
+sleepvar = 1
+sleepElement.innerHTML = "Sleep " + sleepvar
 }
 
 function playBtn(){
-    console.log("smack")
-    document.getElementById("play");
-    const boredvar = document.getElementById("bored"); 
-    console.log(boredvar)
+    boredver = 1
+    boredElement.innerHTML = "bored " + boredver
 }
 
 
-
-// if (hungerlevel < 10 && tiredLevel < 10 && unhappyLevel < 10){
-// hungryLevel++
-// tiredlevel++
-// unhappyLevel++
-// console.log(hungerlevel, tiredLevel, unhappyLevel)
-
-// }
-// //}, 1000)
 // timers for our buttons and stats 
 setInterval(() => {
     age = age + 1
@@ -62,6 +54,9 @@ setInterval(() => {
 setInterval(() => {
      hungervar = hungervar + 1
      hungerElement.innerHTML = "Hunger " + hungervar
+     if (hungervar === 10) {
+        deathTime.style.display = "block"
+     }
  }, 3000)
  
  
