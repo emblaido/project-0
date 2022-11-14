@@ -24,10 +24,8 @@ const ageElement = document.getElementById("age")
 ageElement.innerHTML = "age " + age
 
 function eatBtn() {
-    console.log("hit");
-    document.getElementById("eat");
-const hungervar = document.getElementById("hunger");
-console.log(hungervar)
+    hungervar = 1 
+    hungerElement.innerHTML = "Hunger " + hungervar
 }
 
 function lightsBtn(){
@@ -54,19 +52,29 @@ function playBtn(){
 
 // }
 // //}, 1000)
-
+// timers for our buttons and stats 
 setInterval(() => {
     age = age + 1
     console.log(age);
    ageElement.innerHTML = "age " + age;
-}, 30000)
-// const sleep = setInterval(() => {
-//     tiredLevel--
-// }, 5000)
-// const play = setInterval(() => {
-//     unhappyLevel --
-// }, 7000)
+}, 3000)
 
-// setInterval(() => {
-//     clearInterval(timer)
-// }, 11000) 
+setInterval(() => {
+     hungervar = hungervar + 1
+     hungerElement.innerHTML = "Hunger " + hungervar
+ }, 3000)
+ 
+ 
+ setInterval(() => {
+    sleepvar = sleepvar + 1
+    sleepElement.innerHTML = "sleep " + sleepvar
+}, 3000)
+
+ setInterval(() => {
+  boredver = boredver + 1
+  boredElement.innerHTML = "bored " + boredver
+ }, 3000)
+
+//setInterval(() => {
+     //clearInterval(timer)
+ //}, 11000) 
