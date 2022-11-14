@@ -1,13 +1,27 @@
 console.log("project 0")
 // 3 variables for the levels and assign initial value
 
-let hungervar = 0;
+let hungervar = 10;
 console.log(hungervar)
-let sleepvar = 0;
-console.log(sleepver)
-let boredver = 0;
-console.log(boredver)
+const hungerElement = document.getElementById("hunger");
+console.log(hungerElement)
+hungerElement.innerHTML = "Hunger " + hungervar
+console.log(hungerElement)
 
+let sleepvar = 10;
+console.log(sleepvar)
+const sleepElement = document.getElementById("sleep")
+sleepElement.innerHTML = "Sleep " + sleepvar
+
+let boredver = 10;
+console.log(boredver)
+const boredElement = document.getElementById("bored")
+boredElement.innerHTML = "bored " + boredver
+
+let age = 1000;
+console.log(age)
+const ageElement = document.getElementById("age")
+ageElement.innerHTML = "age " + age
 
 function eatBtn() {
     console.log("hit");
