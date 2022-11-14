@@ -1,5 +1,13 @@
 console.log("project 0")
-// button funtions 
+// 3 variables for the levels and assign initial value
+
+let hungervar = 0;
+console.log(hungervar)
+let sleepvar = 0;
+console.log(sleepver)
+let boredver = 0;
+console.log(boredver)
+
 
 function eatBtn() {
     console.log("hit");
