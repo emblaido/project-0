@@ -1,19 +1,19 @@
 console.log("project 0")
 // 3 variables for the levels and assign initial value
 
-let hungervar = 10;
+let hungervar = 1;
 console.log(hungervar)
 const hungerElement = document.getElementById("hunger");
 console.log(hungerElement)
 hungerElement.innerHTML = "Hunger " + hungervar
 console.log(hungerElement)
 
-let sleepvar = 10;
+let sleepvar = 1;
 console.log(sleepvar)
 const sleepElement = document.getElementById("sleep")
 sleepElement.innerHTML = "Sleep " + sleepvar
 
-let boredver = 10;
+let boredver = 1;
 console.log(boredver)
 const boredElement = document.getElementById("bored")
 boredElement.innerHTML = "bored " + boredver
@@ -46,25 +46,27 @@ function playBtn(){
 
 
 
-if (hungerlevel < 10 && tiredLevel < 10 && unhappyLevel < 10){
-hungryLevel++
-tiredlevel++
-unhappyLevel++
-console.log(hungerlevel, tiredLevel, unhappyLevel)
+// if (hungerlevel < 10 && tiredLevel < 10 && unhappyLevel < 10){
+// hungryLevel++
+// tiredlevel++
+// unhappyLevel++
+// console.log(hungerlevel, tiredLevel, unhappyLevel)
 
-}
-//}, 1000)
-
-const feed = setInterval(() => {
-    hungerlevel--
-}, 3000)
-const sleep = setInterval(() => {
-    tiredLevel--
-}, 5000)
-const play = setInterval(() => {
-    unhappyLevel --
-}, 7000)
+// }
+// //}, 1000)
 
 setInterval(() => {
-    clearInterval(timer)
-}, 11000) 
+    age = age + 1
+    console.log(age);
+   ageElement.innerHTML = "age " + age;
+}, 30000)
+// const sleep = setInterval(() => {
+//     tiredLevel--
+// }, 5000)
+// const play = setInterval(() => {
+//     unhappyLevel --
+// }, 7000)
+
+// setInterval(() => {
+//     clearInterval(timer)
+// }, 11000) 
